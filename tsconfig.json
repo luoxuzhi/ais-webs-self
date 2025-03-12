@@ -1,0 +1,22 @@
+{
+    "extends": "@fs/tsconfig",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"],
+        },
+        "types": ["vitest/globals"],
+        "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "extend.d.ts",
+        "src/**/*.d.ts",
+        "vite.config.ts",
+        "build/*.ts",
+        "build/remove.js",
+        "src/projects/portal/index.ts"
+    ]
+}

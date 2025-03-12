@@ -1,0 +1,26 @@
+.scrollbar {
+    // 滚动条整体部分
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 146px;
+    }
+
+    // 滚动条中的滑块
+    &::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 9px;
+    }
+
+    // 滚动条的外层轨道
+    &::-webkit-scrollbar-track {
+        background: #13274a;
+        border-radius: 9px;
+    }
+}
+
+// 超过一行省略号
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
